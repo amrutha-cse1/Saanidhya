@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Accessibility and elder-friendly UI tweaks */
+:root {
+	--base-font-size: 18px; /* larger base font */
+	--overlay-color: #3D4FA8; /* darker periwinkle tint */
+    --overlay-opacity: 0.32; /* stronger tint for a darker look */
+}
+
+html, body, #root {
+	font-size: var(--base-font-size);
+}
+
+/* Global background image (user-provided: public/bg.png) */
+html, body {
+	/* color behind the image (tint) */
+	background-color: var(--overlay-color);
+	background-image: url('/bg.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Ensure main app content is above any backgrounds */
+#root > * {
+	position: relative;
+	z-index: 1;
+}
+
+/* Full-page translucent overlay using the requested color so the tint applies app-wide */
+#root::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	background-color: rgba(167, 190, 247, var(--overlay-opacity));
+	pointer-events: none;
+	z-index: 0;
+}
+
+/* Large button used for primary CTAs and voice button */
+.large-btn {
+	padding: 14px 20px;
+	font-size: 1.15rem;
+	border-radius: 12px;
+}
+
+/* Floating voice button larger */
+.voice-fab {
+	width: 76px;
+	height: 76px;
+}
+
+/* Clear CTA styling */
+.cta {
+	background-color: #0b63ee;
+	color: white;
+	padding: 12px 18px;
+	border-radius: 10px;
+	font-weight: 600;
+	box-shadow: 0 6px 18px rgba(11,99,238,0.18);
+}
+
+.cta:active, .cta:focus {
+	transform: translateY(1px);
+}
+
+/* Larger helper text */
+.helper-text {
+	font-size: 1.05rem;
+}
+

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+      - ./murf-backend/.env
+    environment:
+      - NODE_ENV=production
+    volumes:
+  - ./murf-backend/saanidhya.db:/app/saanidhya.db
+      # Optional: mount murf-backend logs or cache if needed
+      - ./murf-backend/cache:/app/cache

@@ -1,0 +1,8 @@
+{
+  "feeds": [
+    { "name": "CNN", "url": "https://rss.cnn.com/rss/edition.rss" },
+    { "name": "BBC News", "url": "http://feeds.bbci.co.uk/news/rss.xml" },
+    { "name": "The Guardian", "url": "https://www.theguardian.com/world/rss" },
+    { "name": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms" }
+  ]
+}
