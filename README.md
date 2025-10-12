@@ -2,7 +2,7 @@
 
 A comprehensive eldercare companion app with voice assistance, medicine reminders, memory aids, and emergency contacts.
 
-## 🌟 Features
+##  Features
 
 - **Medicine Reminders**: Voice notifications at scheduled times
 - **Memory Aids**: Reminders for important dates and events
@@ -12,7 +12,7 @@ A comprehensive eldercare companion app with voice assistance, medicine reminder
 - **Multi-language Support**: English and regional languages
 
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 - React 18 with TypeScript
@@ -29,7 +29,7 @@ A comprehensive eldercare companion app with voice assistance, medicine reminder
 - bcrypt password hashing
 - CORS enabled
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Node.js 18+ 
@@ -38,8 +38,8 @@ A comprehensive eldercare companion app with voice assistance, medicine reminder
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/saivarshini07-12/Saanidhya.git
-cd Saanidhya
+git clone https://github.com/saivarshini07-12/SwarSaathi.git
+cd SwarSaathi
 
 # Install all dependencies
 npm run install:all
@@ -56,33 +56,7 @@ JWT_SECRET=your_jwt_secret_key
 PORT=5000
 ```
 
-### API keys & local setup
-The app integrates with a few external services. Add these keys to the root `.env` file to enable features locally:
-
-- `MURF_API_KEY` - Murf TTS API key (required for `/speak` and websocket TTS)
-- `MURF_VOICE_ID` - voice id to use (example: `en-IN-arohi`)
-- `OPENAI_API_KEY` - OpenAI API key for chat and Whisper STT (optional; if missing or quota-limited a canned fallback reply will be used)
-- `GEMINI_API_URL` and `GEMINI_API_KEY` - set both to enable Gemini as an LLM provider (optional)
-- `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM_NUMBER` - for emergency call/SMS features (optional)
-- `OPENWEATHER_API_KEY` - for weather lookup in `/api/weather` (optional)
-
-Recommended minimal `.env` for local development:
-
-```
-MURF_API_KEY=your_murf_api_key
-MURF_VOICE_ID=en-IN-arohi
-OPENAI_API_KEY=your_openai_key_or_leave_blank
-PORT=5000
-ENABLE_SERVER_REMINDERS=true
-LLM_PREFERRED=openai
-JWT_SECRET=some-secret-for-local
-```
-
-Notes:
-- If `OPENAI_API_KEY` is present but your billing/quota is exhausted you will see 429 errors; the server will return a friendly fallback reply instead of failing.
-- To prefer Gemini set `LLM_PREFERRED=gemini` and provide `GEMINI_API_URL` and `GEMINI_API_KEY` in `.env`.
-
-## 🚀 Deployment
+##  Deployment
 
 ### Frontend (GitHub Pages)
 ```bash
@@ -130,7 +104,7 @@ npm run deploy
 - Emergency contacts
 - Mood entries
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch
@@ -147,7 +121,7 @@ npm run deploy
 
 ## Screenshots of our app runned in local host
 
-![WhatsApp Image 2025-07-27 at 02 22 19_e8a72304](https://github.com/user-attachments/assets/9ae6d756-90ed-4079-8269-707fa1c0f3f0)
+
 ![WhatsApp Image 2025-07-27 at 02 22 35_7595f453](https://github.com/user-attachments/assets/9d495323-8c1e-4473-aeb4-4c588601765e)
 ![WhatsApp Image 2025-07-27 at 02 22 52_7d01e170](https://github.com/user-attachments/assets/14279b0d-cd98-45ac-bf25-0d6124722e22)
 ![WhatsApp Image 2025-07-27 at 02 23 12_35e84c0e](https://github.com/user-attachments/assets/cda6368f-b082-4478-8a82-e8a3ba62dcb7)
