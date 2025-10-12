@@ -89,14 +89,14 @@ npm run deploy
 4. **Emergency Contacts**: Store and organize emergency contacts
 5. **Voice Interaction**: Use voice commands for navigation
 
-## 🔒 Security Features
+##  Security Features
 
 - JWT-based authentication
 - Password hashing with bcrypt
 - Secure API endpoints
 - Input validation and sanitization
 
-## 📊 Database Schema
+##  Database Schema
 
 - Users (authentication)
 - Medicine reminders
