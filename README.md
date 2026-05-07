@@ -38,8 +38,8 @@ A comprehensive eldercare companion app with voice assistance, medicine reminder
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/saivarshini07-12/SwarSaathi.git
-cd SwarSaathi
+git clone https://github.com/amrutha-cse1/Saanidhya.git
+cd Saanidhya
 
 # Install all dependencies
 npm run install:all
